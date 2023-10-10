@@ -1,5 +1,3 @@
-"use scrict"
-
 let string = "";
 
 const display = document.querySelector("input");
@@ -28,8 +26,5 @@ document.querySelectorAll("button").forEach((element) => {
   element.addEventListener("click", (event) => {
     let check = event.target.innerHTML;
     act(check);
-  });
-  element.addEventListener("keyup", (event) => {
-    act(event.key);
   });
 });
